@@ -38,7 +38,7 @@ $DOCKER container run \
   -d \
   --name "$ORACLE_CONTAINER_NAME" \
   --mount source="${ORACLE_CONTAINER_NAME}_data",target=/opt/oracle/oradata \
-  -p "$ORACLE_LISTENER_PORT":1523 \
+  -p "$ORACLE_LISTENER_PORT":1521 \
   -e ORACLE_PWD="$ORACLE_PWD" \
   container-registry.oracle.com/database/free:23.7.0.0
 
